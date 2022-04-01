@@ -157,15 +157,18 @@ nav{
 .Github, .Nice{
     background-color: #363732;
 }
+.Github h2{
+    padding-bottom: 15px;;
+}
 .Grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     grid-auto-rows: minmax(100px, auto);
 }
-.Repo, .NiceImage{
+.Repo, .NiceDiv{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.588);
+    background-color: #20201D;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     overflow: hidden;
@@ -174,8 +177,13 @@ nav{
 .Repo>h3, .Repo>p{
     padding-bottom: 10px;
 }
-.NiceImage{
+.NiceDiv{
     padding: 0;
+    display: flex;
+    align-items: center;
+}
+.NiceImage{
+    width: 100%;
 }
 
 iframe{

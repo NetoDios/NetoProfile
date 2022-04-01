@@ -10,7 +10,6 @@ var images = [
 "Plesiosaurus.png",
 "Pterodáctilos.png",
 "Red.png",
-"rojokul.png",
 "Spinosaurus.png",
 "Supreme.png",
 "Tank.png",
@@ -27,9 +26,12 @@ function GoRandom(){
     images.sort( ()=>Math.random()-0.5 );
     console.log(images);
     images.forEach(png => {
+        var lediv = document.createElement("div");
+        lediv.classList.add("NiceDiv")
         var newImg = document.createElement("img");
         newImg.src = "imagenes/"+png;
         newImg.classList.add("NiceImage");
-        imgDiv.appendChild(newImg);
+        lediv.appendChild(newImg);
+        imgDiv.appendChild(lediv);
     });
 }
