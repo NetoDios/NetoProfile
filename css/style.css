@@ -1,0 +1,181 @@
+/*-------Colors
+Orange      #eb5e0b
+darkerblue  #5eaaa8
+lighterblue #a3d2ca
+mostlypink  #f8f1f1
+verdeciro   #A5C44F
+moradiux    #C894DB
+*/
+/* ---------Global*/
+*{
+    font-family: 'Lora', serif;
+    margin: 0;
+    color: #DCE1E9;
+    box-sizing: border-box;
+}
+H1,H2,H3{
+    font-family: 'Stick', sans-serif;
+    font-weight: 900;
+}
+H1{
+    font-size: 2.3em;
+}
+H2{
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #A5C44F;
+}
+H3{
+    clear: both;
+    color: #E39774;
+}
+.left{
+    clear: both;
+    float:left;
+    width: 35%;
+    margin-top: 20px;
+    margin-right: 5%;
+}
+.right{
+    float:left;
+    width: 60%;
+    margin-top: 20px;
+}
+.right>p{
+    text-indent: 30px;
+}
+.right>h2{
+    color: #A5C44F;
+}
+.right>h2+p{
+    text-indent: 0;
+}
+.left>img{
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+}
+p{
+    margin: 0;
+}
+p+p, p+ul{
+    margin-top: 5px;
+}
+a{
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.wrap{
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+/* ---------Header y Footer*/
+header{
+    background-color: #20201D;
+    color: #f8f1f1;
+    position: relative;
+    padding-top: 55px;
+}
+header>div{
+    background:url("../imagenes/rojokul.png") no-repeat fixed center top;
+}
+header h1, header h2{
+    color: #eb5e0b;
+    text-shadow: -2px -1px #20201D;
+}
+header p{
+    text-shadow: -1px 1px #20201D;
+}
+header>.wrap>.left, header>.wrap>.right{
+    margin-top: 0;
+}
+.left>.mi-foto{
+    border-radius: 50%;
+    width: 75%;
+    margin: 0 auto;
+}
+footer{
+    background-color: #20201D;
+    color: #f8f1f1;
+    text-align: center;    
+}
+i.fab, i.far{
+    color: #E39774;
+    font-size: 2em;
+}
+i.fab:hover, i.far:hover{
+    color: #eb5e0b;
+}
+/*  ---------Navigation*/
+nav:after, .goRight:after{
+    content:"";
+    clear:both;
+    display: table;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #20201D;
+}
+.navbar{
+    max-width: calc(100% - 300px);
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.goRight{
+    float: right;
+}
+.goRight>a{
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Stick', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: #A5C44F;
+}
+.goRight a+a{
+    padding-left: 40px;
+}
+.button{
+    background-color: #eb5e0b;
+    padding: 10px 30px;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-family: 'Stick', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: #20201D;
+
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+}
+/* ---------Work*/
+.Github, .Nice{
+    background-color: #363732;
+}
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.Repo, .NiceImage{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.588);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+}
+.NiceImage{
+    padding: 0;
+}
