@@ -1,10 +1,23 @@
-var images = ["Blue.png",
+var images = [
+"Ankylosaurus.png",
+"Blue.png",
+"Brontosaurus.png",
+"Dimetrodon.png",
+"Estegosaurio.png",
 "Killer.png",
 "low Gray.png",
+"Parasaurolophus.png",
+"Plesiosaurus.png",
+"Pterodáctilos.png",
 "Red.png",
 "rojokul.png",
+"Spinosaurus.png",
 "Supreme.png",
-"Tank.png"];
+"Tank.png",
+"Taxi.png",
+"TiranosaurioRex.png",
+"Tricerátops.png",
+"Velociraptor.png"];
 
 const imgDiv = document.getElementById("ImagesHere");
 GoRandom();
