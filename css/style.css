@@ -13,12 +13,12 @@ moradiux    #C894DB
     color: #DCE1E9;
     box-sizing: border-box;
 }
-H1,H2,H3{
+H1,H2,H3,button{
     font-family: 'Stick', sans-serif;
     font-weight: 900;
 }
 H1{
-    font-size: 2.3em;
+    font-size: 4em;
 }
 H2{
     font-size: 1.5em;
@@ -26,6 +26,7 @@ H2{
     color: #A5C44F;
 }
 H3{
+    padding: 0;
     clear: both;
     color: #E39774;
 }
@@ -41,26 +42,33 @@ H3{
     width: 60%;
     margin-top: 20px;
 }
-.right>p{
-    text-indent: 30px;
-}
-.right>h2{
-    color: #A5C44F;
-}
-.right>h2+p{
-    text-indent: 0;
-}
 .left>img{
     display: block;
     width: 50%;
     padding: 0;
     margin: 0 auto;
 }
+.centerVert{
+    display: flex;
+    align-items: center;
+}
 p{
     margin: 0;
 }
 p+p, p+ul{
     margin-top: 5px;
+}
+.Grid>a{
+    padding: 0;
+}
+button{
+    font-size: medium;
+    display: block;
+    margin: 15px auto;
+    padding: 20px 50px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #eb5e0b;
 }
 a{
     padding: 10px 20px;
@@ -117,6 +125,7 @@ nav:after, .goRight:after{
     display: table;
 }
 nav{
+    z-index: 100;
     position: fixed;
     width: 100%;
     top: 0;
@@ -143,21 +152,6 @@ nav{
 .goRight a+a{
     padding-left: 40px;
 }
-.button{
-    background-color: #eb5e0b;
-    padding: 10px 30px;
-    border-radius: 30px;
-
-    text-decoration: none;
-    font-family: 'Stick', sans-serif;
-    font-size: x-large;
-    font-weight: bold;
-    color: #20201D;
-
-    position: absolute;
-    bottom: 20px;
-    right: 150px;
-}
 /* ---------Work*/
 .Github, .Nice{
     background-color: #363732;
@@ -176,6 +170,14 @@ nav{
     overflow: hidden;
     padding: 15px;
 }
+.Repo>h3, .Repo>p{
+    padding-bottom: 10px;
+}
 .NiceImage{
     padding: 0;
+}
+
+iframe{
+    border:none;
+    width: 100%;
 }

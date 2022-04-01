@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/4d17acbd82.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- // Intro -->
     <header id="yo">
-        
+
         <div>
-            <div class="wrap">
+            <div class="wrap centerVert">
                 <div class="left">
                     <img src="imagenes/me.jpeg" alt="Ernesto Alvarez" class="mi-foto">
                 </div>
@@ -33,37 +35,44 @@
             </div>
         </nav>
     </header>
-    
-    <main> 
+
+    <main>
         <!-- // Work Experience -->
         <section class="Github" id="Github">
             <div class="wrap">
                 <h2>Mis Repos</h2>
                 <div class="Grid">
-                    <div class="Repo">
-                        <h3>TEC</h3>
-                        <p>Aqui tengo algunos programas que me han pedido hacer a lo largo de mi estancia en en Tec</p>
-                        <iframe src="https://github.com/NetoDios/TEC" frameborder="0"></iframe>
-                    </div>
-                    <div class="Repo">
-                        <h3>Sistema Combro</h3>
-                        <p>Una aplicacion web que hice para llevar registrio de cortes de cabello en una barberia</p>
-                        <iframe src="https://github.com/NetoDios/Sistema-Cobro" frameborder="0"></iframe>
-                    </div>
-                    <div class="Repo">
-                        <h3>RTM BeatCovid Concurso</h3>
-                        <p>Una aplicacion web que simula el programa Jeopardy, para un concurso que oganize</p>
-                        <iframe src="https://github.com/NetoDios/RTM-BeatCovid-Concurso" frameborder="0"></iframe>
-                    </div>
-                    <div class="Repo">
-                        <h3>TT Metodos</h3>
-                        <p>Un repositorio para las actividades de la materia Metodos Computacionales, es colaborativo</p>
-                        <iframe src="https://github.com/NetoDios/TT-Metodos" frameborder="0"></iframe>
-                    </div>
-                    </div>
+                    <a href="https://github.com/NetoDios/TEC">
+                        <div class="Repo">
+                            <h3>TEC</h3>
+                            <p>Aqui tengo algunos programas que me han pedido hacer a lo largo de mi estancia en en Tec
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/NetoDios/Sistema-Cobro">
+                        <div class="Repo">
+                            <h3>Sistema Combro</h3>
+                            <p>Una aplicacion web que hice para llevar registrio de cortes de cabello en una barberia
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/NetoDios/RTM-BeatCovid-Concurso">
+                        <div class="Repo">
+                            <h3>RTM BeatCovid Concurso</h3>
+                            <p>Una aplicacion web que simula el programa Jeopardy, para un concurso que oganize</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/NetoDios/TT-Metodos">
+                        <div class="Repo">
+                            <h3>TT Metodos</h3>
+                            <p>Un repositorio para las actividades de la materia Metodos Computacionales, es
+                                colaborativo</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            
+            </div>
+
         </section>
 
 
@@ -71,27 +80,18 @@
         <section class="Nice" id="nice">
             <div class="wrap">
                 <h2>Un poco de lo que me gusta</h2>
+                <button onclick="GoRandom()">Randomizar</button>
                 <div id="ImagesHere" class="Grid">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
-                    <img src="imagenes/rojokul.png" class="NiceImage">
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- // Footer & contact info -->
     <footer id="contact">
         <div class="wrap">
             <h2>Hay que toparnos!</h2>
-            
+
             <!-- Social media and contact links. Add or remove any networks. -->
             <div>
                 <a href="mailto:ErnestoAdrian17@gmail.com"><i class="far fa-envelope"></i></a>
@@ -101,5 +101,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="randomizar.js"></script>
 </body>
+
 </html>
